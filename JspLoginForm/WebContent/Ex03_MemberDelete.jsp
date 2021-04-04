@@ -16,13 +16,6 @@
 		4. 이동처리 >> 삭제 완료시 >> 목록페이지로 이동		
 	*/
 	
-	/*
-	if (session.getAttribute("userid") == null || !session.getAttribute("userid").equals("admin")) {
-		//강제로 다른 페이지 이동
-		out.print("<script>location.href='Ex02_JDBC_Login.jsp'</script>");
-	}
-*/
-
 	String id = request.getParameter("id");
 
 	Connection conn = null;
@@ -36,6 +29,7 @@
 		int row = pstmt.executeUpdate();
 		if (row > 0) {
 			out.print("<script>");
+			out.print("alert('삭제되었습니다');");
 			out.print("location.href='Ex03_Memberlist.jsp'");
 			out.print("</script>");
 

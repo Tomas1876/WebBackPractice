@@ -109,9 +109,13 @@ CREATE TABLE koreaMemberboard
 									<div class="input-group-prepend">
 										<span class="input-group-text"> <i class="fa fa-keyboard-o"></i></span>
 									</div>
-									<!-- 제목 -->
+									<!-- 본문 -->
+									
+									<textarea rows="5" cols="20" class="form-control" placeholder="내용"
+									id="text" name="text"></textarea>
+									<!--  
 									<input name="text" class="form-control" placeholder="내용"
-										type="text" id="textbox" style="height:200px;cols:20;">
+										type="text" id="textbox" style="height:200px;cols:20;">-->
 								</div>
 								
 								
@@ -121,8 +125,10 @@ CREATE TABLE koreaMemberboard
 									<input type="submit" value="등록"
 										class="btn btn-primary btn-block"> </input> <input
 										type="reset" value="취소" class="btn btn-primary btn-block"></input>
+										<!-- onclick 링크를 걸면 글 작성이 안된다 
 										<input
 										type="button" onclick='location.href="Help.jsp"' value="목록으로" class="btn btn-primary btn-block"></input>
+								-->
 								</div>
 							</form>
 						</article>
