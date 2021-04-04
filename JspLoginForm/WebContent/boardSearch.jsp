@@ -79,7 +79,8 @@
 								}
 							%>
 				</table>
-				<a href="Help.jsp">고객센터</a>
+				<input type="button" onclick='location.href="Help.jsp"' value="목록으로" class="btn btn-primary btn-block"
+				style="width:400px; margin:20px auto;"></input>
 			<%
 				Singleton_Helper.close(rs);
 				Singleton_Helper.close(pstmt);

@@ -98,11 +98,11 @@
 								<hr>
 								<form action="boardSearch.jsp" method="post">
 									제목: <input type="text" name="search"> <br>
-									<input type="submit" value="게시글 검색하기" id="btn">
+									<input type="submit" value="게시글 검색하기" class="btn btn-primary btn-block" style="width:300px; margin:20px auto;">
 									
 								</form>
 								<form action="boardwrite.jsp" method="post">
-								<input type="submit" value="새 글 쓰기" id="btn">
+								<input type="submit" value="새 글 쓰기" class="btn btn-primary btn-block" style="width:300px; margin:20px auto;">
 								</form>
 								<hr>
 								<%	

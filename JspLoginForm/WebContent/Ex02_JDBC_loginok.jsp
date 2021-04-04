@@ -82,9 +82,10 @@
 			  //이동처리
 			  response.sendRedirect("Ex02_JDBC_Main.jsp");
 			}else{
+				
 				//ID 존재 , PWD(x)
 				out.print("<script>");
-				out.print("alert('비밀번호가 맞지 않습니다');");
+				out.print("alert('비밀번호를 올바르게 입력해주세요');");
 					out.print("location.href='Ex02_JDBC_Login.jsp'"); // 다시 로그인 시도
 				out.print("</script>");
 			}
