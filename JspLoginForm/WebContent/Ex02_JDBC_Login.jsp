@@ -64,6 +64,8 @@
 									<input type="submit" value="로그인"
 										class="btn btn-primary btn-block"> </input> <input
 										type="reset" value="취소" class="btn btn-primary btn-block"></input>
+										
+										<p><br><a href="Ex02_JDBC_JoinForm.jsp">아직 회원이 아니신가요? </a></p>
 								</div>
 								<!-- form-group// -->
 
@@ -84,7 +86,7 @@
 
 		</div>
 
-		<!-- cnotentarea end -->
+		<!-- contentarea end -->
 	</div>
 
 	<div id="bottomarea"><jsp:include page="/common/Bottom.jsp"></jsp:include></div>

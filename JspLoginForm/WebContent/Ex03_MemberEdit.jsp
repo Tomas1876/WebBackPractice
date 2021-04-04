@@ -25,12 +25,7 @@
 	      >> 서버에 전송하려면 name 속성이 있어야 한다
 	      	 화면에 출력할 때 가장 중요한 것은 수정가능 여부와 서버 전송여부다 이걸 케이스별로 판단해야 한다
 	      	 보통 알아보기 쉽게 수정할 수 있는 것은 색을 다르게 하거나, placeholder를 걸면 된다
-	
-	
-	if(session.getAttribute("userid") == null || !session.getAttribute("userid").equals("admin") ){
-		//강제로 페이지 이동
-		out.print("<script>location.href='Ex02_JDBC_Login.jsp'</script>");
-	}
+
 	*/
     request.setCharacterEncoding("UTF-8");
 	String id = request.getParameter("id");

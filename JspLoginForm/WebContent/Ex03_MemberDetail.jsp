@@ -23,12 +23,7 @@
 2.로그인한 일반 회원이 주소값을 외워서 ... 접근불가 
 3.그러면  회원에 관련되 모든 페이지 상단에는 아래 코드를 ..... : sessionCheck.jsp >> include 
 */
-/*
-	if(session.getAttribute("userid") == null || !session.getAttribute("userid").equals("admin") ){
-		//강제로 페이지 이동
-		out.print("<script>location.href='Ex02_JDBC_Login.jsp'</script>");
-	}
-*/
+
 %>
 <!DOCTYPE html>
 <html>
@@ -116,8 +111,6 @@
 	
 		<!-- cnotentarea end -->	
 		</div>
-	
-		<div id="bottomarea"><jsp:include page="/common/Bottom.jsp"></jsp:include></div>
 		
 	<!-- fullwrap end -->
 	</div>

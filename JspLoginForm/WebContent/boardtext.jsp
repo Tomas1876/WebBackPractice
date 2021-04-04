@@ -22,7 +22,7 @@
 			<div id="leftarea"><jsp:include page="/common/Left.jsp"></jsp:include></div>
 			<div id="chaingingarea">
 			<!--  
-				회원리스트 출력
+				게시글 출력
 				<table style="width: 400px;height: 100px;margin-left: auto;margin-right: auto">
 				</table>
 				-->
@@ -35,7 +35,7 @@
 				  		
 				  		try{
 				  			conn = Singleton_Helper.getConnection("oracle");
-				  			String sql = "select title,pwd,name,emil, text from koreamemberboard where title=?";
+				  			String sql = "select title,pwd,name,emil,text from koreamemberboard where title=?";
 				  			pstmt = conn.prepareStatement(sql);
 				  			
 				  			pstmt.setString(1, title);

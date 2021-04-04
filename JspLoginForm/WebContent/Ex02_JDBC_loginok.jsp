@@ -64,6 +64,9 @@
 		pstmt.setString(1,id);
 		rs = pstmt.executeQuery(); 
 		
+		
+		
+
 		//업무(예쁘게 하려면 if문 쓰는 게 맞지만 돌아는 간다)
 		while(rs.next()){
 			//데이터가 있다 (id가 존재)
@@ -81,14 +84,17 @@
 			}else{
 				//ID 존재 , PWD(x)
 				out.print("<script>");
-				out.print("alert('존재하지 않는 아이디입니다');");
+				out.print("alert('비밀번호가 맞지 않습니다');");
 					out.print("location.href='Ex02_JDBC_Login.jsp'"); // 다시 로그인 시도
 				out.print("</script>");
 			}
 		}
 		//while 타지 않는 경우
 		out.print("<script>");
-			out.print("location.href='Ex02_JDBC_JoinForm.jsp'");
+		out.print("alert('존재하지 않는 아이디입니다.');");
+		// 기본 권장은 가입폼 이동이지만, 아이디를 잘못 입력했을 경우를 상정해 다시 로그인시도 처리
+		//out.print("location.href='Ex02_JDBC_JoinForm.jsp'");
+		out.print("location.href='Ex02_JDBC_Login.jsp'");
 		out.print("</script>");
 		
 		

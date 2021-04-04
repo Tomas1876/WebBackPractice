@@ -76,8 +76,8 @@
 										</tr>
 									</thead>
 									<tbody>
-										<% while(rs.next()){
-											int i = 1;
+										<% int i = 1;
+										while(rs.next()){
 											i++; %>
 										<tr>
 											<th scope="row" class="col-3"><% System.out.print(i);%></th>
@@ -86,8 +86,10 @@
 												<td class="col-3">
 												<%=rs.getString("name")%></td>	
 											<td class="col-3"><a
-												href="boardDelete.jsp?title=<%=rs.getString("title")%>">삭제/</a><a
-												href="boardEdit.jsp?title=<%=rs.getString("title")%>">수정</a></td>
+												href="boardDelete.jsp?title=<%=rs.getString("title")%>">삭제</a>
+												<!--  boardEdit 부분 수정중
+												<a
+												href="boardEdit.jsp?title=<%=rs.getString("title")%>">수정</a>--></td>
 										</tr>
 										<% } %>
 									</tbody>

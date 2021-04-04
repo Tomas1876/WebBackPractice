@@ -123,7 +123,7 @@ CREATE TABLE koreaMemberboard
 								<!-- form-group// -->
 								<div class="form-group">
 									<input type="submit" value="등록"
-										class="btn btn-primary btn-block"> </input> <input
+										class="btn btn-primary btn-block"/> <input
 										type="reset" value="취소" class="btn btn-primary btn-block"></input>
 										<!-- onclick 링크를 걸면 글 작성이 안된다 
 										<input
