@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	height:100%;
+}
+
+#fullwrap{
+	height:100%;
+}
+
+
+#header{
+	height:70px;
+	width:100%;
+}
+
+#contentarea{
+	width:100%;
+	height:90%;
+	display:flex;
+}
+
+#leftarea{
+	width:1%;
+	
+}
+
+#chaingingarea{
+	width:99%;
+
+}
+
+form{
+	margin:auto;
+	width:400px;
+}
+
+/*메인페이지의 경우*/
+#chaingingarea p {
+	color:black;
+	text-align: center;
+}
+
+
+#bottomarea{
+	width:100%;
+}
+
