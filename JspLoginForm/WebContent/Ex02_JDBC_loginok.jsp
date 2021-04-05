@@ -99,7 +99,7 @@
 		out.print("</script>");
 		
 		
-		//
+		
 	}catch(Exception e){
 		System.out.println(e.getMessage());
 	}finally{
@@ -107,9 +107,7 @@
 		Singleton_Helper.close(pstmt);
 	} 
 	
-%>    
-
-
+%> 
 
 
 

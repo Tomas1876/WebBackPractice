@@ -153,7 +153,7 @@ CREATE TABLE koreaMember
 										</span>
 									</div>
 									<!-- 이메일 -->
-									<input name="" class="form-control" placeholder="Email address"
+									<input name="email" class="form-control" placeholder="Email address"
 										type="email">
 								</div>
 

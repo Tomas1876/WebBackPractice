@@ -116,7 +116,7 @@
 									</div>
 									<!-- 이름 -->
 									<input name="name" id="name" class="form-control"
-										placeholder="이름 <%=rs.getString(3)%>" type="text">
+										placeholder="<%=rs.getString(3)%>" type="text">
 								</div>
 
 								<div class="form-group input-group">
@@ -125,7 +125,7 @@
 										</span>
 									</div>
 									<!-- 나이 -->
-									<input type="text" name="age" value="나이 <%=rs.getString(4)%>" id="age" maxlength="3"
+									<input type="text" name="age" value="<%=rs.getString(4)%>" id="age" maxlength="3"
 										class="form-control">
 								</div>
 
@@ -153,7 +153,7 @@
 									</div>
 									<!-- 이메일 -->
 									<input name="email" class="form-control" value="<%=rs.getString(6)%>"
-										type="email">
+										type="email" id="email">
 								</div>
 
 
