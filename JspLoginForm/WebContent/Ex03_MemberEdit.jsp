@@ -116,7 +116,7 @@
 									</div>
 									<!-- 이름 -->
 									<input name="name" id="name" class="form-control"
-										placeholder="<%=rs.getString(3)%>" type="text">
+										value="<%=rs.getString(3)%>" type="text">
 								</div>
 
 								<div class="form-group input-group">

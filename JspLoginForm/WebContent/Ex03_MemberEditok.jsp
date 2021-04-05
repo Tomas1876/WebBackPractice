@@ -17,10 +17,19 @@
     		
  
 	request.setCharacterEncoding("UTF-8");
-	
+
 	String id = request.getParameter("id");
 	String name = request.getParameter("name");
+	
+	
+	out.print("아이디"+request.getParameter("id"));
+	out.print("이름"+request.getParameter("name"));
+	out.print("나이"+request.getParameter("age"));
+	
+
+	
 	int age = Integer.parseInt(request.getParameter("age"));
+
 	String email = request.getParameter("email");
 	String gender = request.getParameter("gender");
 	//out.print(id + " / " + name + " / " + age + " / " + email);
@@ -45,6 +54,10 @@
 		
 	}catch(Exception e){
 		e.printStackTrace();
+		
+		out.print("<script>");
+
+		out.print("</script>");
 	}finally{
 		Singleton_Helper.close(pstmt);
 	
