@@ -119,8 +119,12 @@ if (session.getAttribute("userid") == null || !session.getAttribute("userid").eq
 
 									<hr>
 									<form action="Ex03_MemberSearch.jsp" method="post">
-										회원명: <input type="text" name="search"> <br> <input
-											type="submit" value="이름검색하기" id="btn">
+										회원명: <input type="text" name="search"> <br> 
+										<!-- 
+										<input type="submit" value="이름검색하기" id="btn">
+											 -->
+										<input type="submit" value="이름으로 검색" class="btn btn-primary btn-block"
+										style="width:300px; margin:20px auto;" id="btn">
 									</form>
 									<hr>
 									<%

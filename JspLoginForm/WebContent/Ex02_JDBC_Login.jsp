@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 
 
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/join.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/css/join.css">
 
 <!-- 로그인 템플릿 링크들 -->
 <link
@@ -64,8 +65,11 @@
 									<input type="submit" value="로그인"
 										class="btn btn-primary btn-block"> </input> <input
 										type="reset" value="취소" class="btn btn-primary btn-block"></input>
-										
-										<p><br><a href="Ex02_JDBC_JoinForm.jsp">아직 회원이 아니신가요? </a></p>
+
+									<p>
+										<br>
+										<a href="Ex02_JDBC_JoinForm.jsp">아직 회원이 아니신가요? </a>
+									</p>
 								</div>
 								<!-- form-group// -->
 
@@ -89,7 +93,7 @@
 		<!-- contentarea end -->
 	</div>
 
-	<div id="bottomarea"><jsp:include page="/common/Bottom.jsp"></jsp:include></div>
+	<jsp:include page="/common/Bottom.jsp"></jsp:include>
 
 	<!-- fullwrap end -->
 	</div>

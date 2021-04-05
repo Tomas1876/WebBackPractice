@@ -72,6 +72,7 @@
 
 	<!-- fullwrap end -->
 	</div>
+	<jsp:include page="/common/Bottom.jsp"></jsp:include>
 
 </body>
 </html>

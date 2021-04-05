@@ -8,15 +8,7 @@
     <!-- 권한검사 -->
 	<jsp:include page='/common/Check.jsp'></jsp:include>
 	
-<%/*
-	if(session.getAttribute("userid") == null || !session.getAttribute("userid").equals("admin") ){
-		//강제로 페이지 이동
-		out.print("<script>location.href='Ex02_JDBC_Login.jsp'</script>");
-	}
-    
-	request.setCharacterEncoding("UTF-8");
-*/
-%>    
+  	
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,9 +25,12 @@
 		
 			<div id="leftarea"><jsp:include page="/common/Left.jsp"></jsp:include></div>
 			<div id="chaingingarea">
-			
+
  <!--  데이터 받아서 UI 구성 -->
-			 <%
+			  <%
+			  
+
+			  
 			 	String name=request.getParameter("search");	
 			 
 			 	Connection conn = null;
@@ -58,32 +53,33 @@
 				<table style="width: 400px;height: 100px;margin-left: auto;margin-right: auto">
 							<tr><th colspan="4">회원리스트</th></tr>
 							<%
-								if(rowcount > 0){
-									pstmt = conn.prepareStatement(sql2); 
-									rs = pstmt.executeQuery();
-									while(rs.next()){
-										String id = rs.getString(1);
-										String mname = rs.getString(2);
-										String email = rs.getString(3);
-							%>
-									 <tr>
-									 	<td><%=id%></td>
-									 	<td><%=mname%></td>
-									 	<td><%=email %></td>
-									 </tr>
-							<%			
-									} //end while
-									out.print("<tr><td colspan='3'>");
-									out.print("<b>[" + name + "] 조회결과" + rowcount + "건 조회</b>");
-									out.print("</td></tr>");	
-								}else{ //조회된 건수가 없는 경우
-									out.print("<tr><td colspan='3'>");
-									out.print("<b>[" + name + "] 조회결과가 없습니다</b>");
-									out.print("</td></tr>");	
-								}
-							%>
+							if(rowcount > 0){
+								pstmt = conn.prepareStatement(sql2); 
+								rs = pstmt.executeQuery();
+								while(rs.next()){
+									String id = rs.getString(1);
+									String mname = rs.getString(2);
+									String email = rs.getString(3);
+						%>
+								 <tr>
+								 	<td><%=id%></td>
+								 	<td><%=mname%></td>
+								 	<td><%=email %></td>
+								 </tr>
+						<%			
+								} //end while
+								out.print("<tr><td colspan='3'>");
+								out.print("<b>[" + name + "] 조회결과" + rowcount + "건 조회</b>");
+								out.print("</td></tr>");	
+							}else{ //조회된 건수가 없는 경우
+								out.print("<tr><td colspan='3'>");
+								out.print("<b>[" + name + "] 조회결과가 없습니다</b>");
+								out.print("</td></tr>");	
+							}
+						%>
 				</table>
-				<a href="Ex03_Memberlist.jsp">회원 목록 페이지</a>
+				<input type="button" onclick='location.href="Ex03_Memberlist.jsp"' value="목록으로" class="btn btn-primary btn-block"
+				style="width:400px; margin:20px auto;"></input>
 			<%
 				Singleton_Helper.close(rs);
 				Singleton_Helper.close(pstmt);

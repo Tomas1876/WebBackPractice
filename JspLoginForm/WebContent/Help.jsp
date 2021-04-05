@@ -125,7 +125,7 @@
 			<!-- cnotentarea end -->
 		</div>
 
-		<div id="bottomarea"><jsp:include page="/common/Bottom.jsp"></jsp:include></div>
+<jsp:include page="/common/Bottom.jsp"></jsp:include>
 
 		<!-- fullwrap end -->
 	</div>

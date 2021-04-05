@@ -7,4 +7,6 @@
 		//response.sendRedirect("Ex02_JDBC_Login.jsp");
 		out.print("<script>location.href='Ex02_JDBC_Login.jsp'</script>");
 	}
+
+	request.setCharacterEncoding("UTF-8");
 %>	
